@@ -1,14 +1,14 @@
 # OpenShift GitHub Actions Runners
 
-[![Update Runner Images](https://github.com/redhat-actions/openshift-actions-runner/actions/workflows/update_images.yml/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner/actions/workflows/update_images.yml)
-[![Link checker](https://github.com/redhat-actions/openshift-actions-runner/actions/workflows/link_check.yml/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner/actions/workflows/link_check.yml)
+[![Update Runner Images](https://github.com/redhatryan/openshift-actions-runner/actions/workflows/update_images.yml/badge.svg)](https://github.com/redhatryan/openshift-actions-runner/actions/workflows/update_images.yml)
+[![Link checker](https://github.com/redhatryan/openshift-actions-runner/actions/workflows/link_check.yml/badge.svg)](https://github.com/redhatryan/openshift-actions-runner/actions/workflows/link_check.yml)
 
-[![Tag](https://img.shields.io/github/v/tag/redhat-actions/openshift-actions-runner)](https://github.com/redhat-actions/openshift-actions-runner/tags)
+[![Tag](https://img.shields.io/github/v/tag/redhatryan/openshift-actions-runner)](https://github.com/redhatryan/openshift-actions-runner/tags)
 [![Quay org](https://img.shields.io/badge/quay-redhat--github--actions-red)](https://quay.io/organization/redhat-github-actions)
 
 This repository contains Containerfiles for building container images that act as [self-hosted GitHub Action runners](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/about-self-hosted-runners) that work on OpenShift.
 
-The [**OpenShift Actions Runner Chart**](https://github.com/redhat-actions/openshift-actions-runner-chart) is used to deploy these images into a cluster, and the [**OpenShift Actions Runner Installer**](https://github.com/redhat-actions/openshift-actions-runner-installer) is an Action to automate the chart install.
+The [**OpenShift Actions Runner Chart**](https://github.com/redhatryan/openshift-actions-runner-chart) is used to deploy these images into a cluster, and the [**OpenShift Actions Runner Installer**](https://github.com/redhat-actions/openshift-actions-runner-installer) is an Action to automate the chart install.
 
 ## Runners
 1. The [**base runner**](./base) is based on Fedora. It is intended to have a fairly minimal tool set to keep the image size as small as possible. It has all the GitHub Actions Runner needs, plus a limited number of popular Unix command-line tools.

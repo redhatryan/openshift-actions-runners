@@ -1,8 +1,0 @@
-ARG BASE_IMG=quay.io/redhat-github-actions/runner:latest
-FROM $BASE_IMG AS dotnet-6.0-runner
-
-USER root
-
-RUN dnf install -y dotnet-sdk-6.0
-
-USER $UID
